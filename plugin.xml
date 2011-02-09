@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.php.core.goalEvaluatorFactories">
+         <factory class="pp.evaluator.PPGoalEvaluatorFactory"
+         	priority="100">
+         </factory>
+   </extension>
+
+<extension point="org.eclipse.php.core.completionStrategyFactories">
+     <factory class="pp.completion.StrategyFactory"/>
+  </extension>
+
+  <extension point="org.eclipse.php.core.completionContextResolvers">
+     <resolver class="pp.completion.ContextResolver"/>
+  </extension>
+  <extension
+        point="org.eclipse.ui.preferencePages">
+     <page
+           class="ppsense.preferences.PreferencesPage"
+           id="pp.preferences.SamplePreferencePage"
+           name="PP CodeAssist Properties">
+     </page>
+  </extension>
+  <extension
+        point="org.eclipse.core.runtime.preferences">
+     <initializer
+           class="ppsense.preferences.PreferenceInitializer">
+     </initializer>
+  </extension>
+
+</plugin>
