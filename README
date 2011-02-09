@@ -1,0 +1,4 @@
+This is a Eclipse PDT plugin extension, that provides code assist tailored
+for particular framework.
+
+Works with Eclipse Helios (3.6) and PDT 2.2
